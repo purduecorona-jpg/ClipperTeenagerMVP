@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: clipper-backend
+    env: node
+    branch: main
+    buildCommand: "cd backend && npm install"
+    startCommand: "cd backend && npm start"
+    envVars:
+      - key: MONGO_URI
+        value: "<TWÓJ_MONGO_URI>"
+      - key: STRIPE_SECRET_KEY
+        value: "<TWÓJ_STRIPE_SECRET_KEY>"
+
+  - type: web
+    name: clipper-frontend
+    env: node
+    branch: main
+    buildCommand: "cd frontend && npm install"
+    startCommand: "cd frontend && npm start"
