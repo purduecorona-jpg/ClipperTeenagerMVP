@@ -1,0 +1,15 @@
+{
+  "name": "clipper-teenager-frontend",
+  "main": "App.js",
+  "dependencies": {
+    "expo": "^49.0.0",
+    "react": "18.2.0",
+    "react-native": "0.72.0",
+    "axios": "^1.5.0",
+    "react-navigation": "^6.5.0"
+  },
+  "scripts": {
+    "start": "expo start",
+    "web": "expo start --web"
+  }
+}
