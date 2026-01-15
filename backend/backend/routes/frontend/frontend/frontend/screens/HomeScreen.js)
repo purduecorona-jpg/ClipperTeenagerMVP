@@ -1,0 +1,20 @@
+import React from 'react';
+import { View, Text, Button } from 'react-native';
+import axios from 'axios';
+
+export default function HomeScreen({ navigation }) {
+  const handleSubscribe = async () => {
+    const res = await axios.post('http://localhost:5000/api/payments/create-subscription', {
+      customerEmail: 'test@example.com',
+      priceId: 'price_1SpiFp639JRV7b5vFrvUPG2P' // Premium
+    });
+    console.log(res.data);
+  };
+
+  return (
+    <View style={{ flex:1, justifyContent:'center', alignItems:'center' }}>
+      <Text>Witaj w Clipper Teenager!</Text>
+      <Button title="Wykup Premium" onPress={handleSubscribe} />
+    </View>
+  );
+}
