@@ -1,0 +1,1 @@
+Compress-Archive -Path tiktok-clone\* -DestinationPath tiktok-clone.zip
