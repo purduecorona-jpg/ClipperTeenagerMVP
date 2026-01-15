@@ -1,0 +1,25 @@
+ClipperTeenagerApp/
+│
+├── backend/
+│   ├── package.json         <-- zależności Node.js (Express, Stripe itp.)
+│   ├── server.js            <-- serwer Express + Stripe
+│   ├── routes/
+│   │   └── payments.js      <-- obsługa Stripe
+│   ├── .env.example         <-- przykładowe zmienne środowiskowe
+│
+├── frontend/
+│   ├── package.json
+│   ├── App.js               <-- główny plik React Native (Expo)
+│   ├── screens/
+│   │   ├── HomeScreen.js
+│   │   ├── LiveScreen.js
+│   │   └── ProfileScreen.js
+│   ├── components/
+│   │   ├── Header.js
+│   │   └── VideoCard.js
+│   ├── assets/
+│   │   └── logo.png
+│
+├── README.md
+├── .gitignore
+└── render.yaml              <-- konfiguracja Render (root, start command)
