@@ -1,0 +1,21 @@
+clipperteenagermvp/
+│
+├─ public/
+│   └─ videos/
+│       ├─ sample1.mp4
+│       ├─ sample2.mp4
+│       └─ sample3.mp4
+│
+├─ pages/
+│   └─ index.js
+│
+├─ components/
+│   ├─ VideoCard.js
+│   └─ SidebarActions.js
+│
+├─ styles/
+│   ├─ globals.css
+│   └─ VideoCard.module.css
+│
+├─ package.json
+└─ next.config.js
