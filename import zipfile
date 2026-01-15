@@ -1,0 +1,32 @@
+import zipfile
+import os
+
+# Ścieżka, gdzie utworzymy plik ZIP
+zip_path = '/mnt/data/ClipperTeenagerMVP_Full.zip'
+project_files_path = '/mnt/data/ClipperTeenagerMVP_Files/'  # katalog roboczy z plikami projektu
+
+# Tworzymy przykładową strukturę plików projektu
+os.makedirs(project_files_path + 'frontend', exist_ok=True)
+os.makedirs(project_files_path + 'backend', exist_ok=True)
+os.makedirs(project_files_path + 'config', exist_ok=True)
+
+# Tworzymy przykładowe pliki
+with open(project_files_path + 'frontend/App.js', 'w') as f:
+    f.write('// Tu idzie frontend React Native / Expo
+')
+with open(project_files_path + 'backend/server.js', 'w') as f:
+    f.write('// Tu idzie backend Node.js + Express + Stripe integration
+')
+with open(project_files_path + 'config/.env', 'w') as f:
+    f.write('STRIPE_SECRET_KEY=sk_test_xxx\n')
+with open(project_files_path + 'README.md', 'w') as f:
+    f.write('# Clipper Teenager MVP\nInstrukcja instalacji i uruchomienia.')
+
+# Tworzymy ZIP
+with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+    for root, dirs, files in os.walk(project_files_path):
+        for file in files:
+            file_path = os.path.join(root, file)
+            zipf.write(file_path, os.path.relpath(file_path, project_files_path))
+
+zip_path
