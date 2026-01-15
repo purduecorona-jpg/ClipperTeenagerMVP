@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#__next {
+  height: 100%;
+}
+
+.feed {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.video-card {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
