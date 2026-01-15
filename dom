@@ -1,0 +1,21 @@
+tiktok-clone/
+│
+├─ public/
+│   └─ videos/
+│       ├─ video1.mp4
+│       ├─ video2.mp4
+│       └─ video3.mp4
+│
+├─ pages/
+│   └─ index.js
+│
+├─ components/
+│   ├─ VideoCard.js
+│   └─ SidebarActions.js
+│
+├─ styles/
+│   ├─ globals.css
+│   └─ VideoCard.module.css
+│
+├─ package.json
+└─ next.config.js
