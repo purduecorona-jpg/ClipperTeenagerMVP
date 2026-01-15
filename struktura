@@ -1,0 +1,16 @@
+ClipperTeenager/
+│
+├─ backend/               # Node.js + Express
+│   ├─ server.js
+│   ├─ routes/
+│   └─ package.json
+│
+├─ frontend/              # Expo React Native + Web
+│   ├─ App.js
+│   ├─ screens/
+│   ├─ components/
+│   ├─ assets/
+│   └─ package.json
+│
+├─ README.md
+└─ .env.example           # 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
