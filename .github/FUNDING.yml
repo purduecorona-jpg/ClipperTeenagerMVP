@@ -1,0 +1,11 @@
+import SponsorButton from "./SponsorButton";
+
+function App() {
+  return (
+    <div>
+      {/* Inne elementy strony */}
+      <SponsorButton />
+    </div>
+  );
+}
+
