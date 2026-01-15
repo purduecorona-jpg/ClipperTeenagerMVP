@@ -1,0 +1,42 @@
+ClipperTeenager/
+│
+├── backend/
+│   ├── package.json
+│   ├── server.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── payments.js
+│   │   ├── video.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── paymentController.js
+│   │   └── videoController.js
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Video.js
+│   └── utils/
+│       └── stripe.js
+│
+├── frontend/
+│   ├── App.js
+│   ├── package.json
+│   ├── babel.config.js
+│   ├── assets/
+│   │   ├── images/
+│   │   └── fonts/
+│   ├── screens/
+│   │   ├── HomeScreen.js
+│   │   ├── LiveScreen.js
+│   │   ├── ProfileScreen.js
+│   │   ├── PaymentScreen.js
+│   ├── components/
+│   │   ├── VideoCard.js
+│   │   ├── ARView.js
+│   │   └── Header.js
+│   └── navigation/
+│       └── AppNavigator.js
+│
+├── .gitignore
+├── README.md
+├── render.yaml
+└── env.example
